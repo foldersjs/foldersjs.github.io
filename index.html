@@ -11,15 +11,20 @@
     <title>FoldersJS</title>
   </head>
 
-  <body>
+  <body id="top">
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/foldersjs">View on GitHub</a>
 
-          <h1 id="project_title">FoldersJS</h1>
-          <h2 id="project_tagline"></h2>
+	  <h1 id="project_title" style="text-align: center">
+		  <img src="media/icon_transparent_64x64.png" height="64" width="64" alt="" style="vertical-align: middle" />
+		  <span>FoldersJS</span>
+	  </h1>
+	  <!--
+	  <h2 id="project_tagline"></h2>
+	  -->
 
         </header>
     </div>
@@ -28,16 +33,108 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a id="folders" class="anchor" href="#folders" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Folders</h3>
+<a id="folders" class="anchor" href="#folders" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FoldersJS Introduction</h3>
 
-<p>As simple as folders, with the foldersjs project. An exploration into platform.</p>
-      </section>
+<p>FoldersJS is a collection of node.js projects presenting abstract services as folders.</p>
+
+<hr />
+
+<p>
+<div style="text-align: center">
+	<img src="media/lib/matt-icons_folder-white-300px.png" width="300" alt="" style="vertical-align: middle">
+	<h3 style="display: inline-block; font-size: .9em">Folders are a metaphor for data access.</h3>
+</div>
+
+When presented as a user interface artifact or a programming abstraction, a folder is a container.
+Folders will have a name, a list of other items and a common set of properties.
+Conventions for folder names and properties differ across systems.
+
+When a folder is opened, the list of items or properties it has been assigned become accessible.
+</p>
+
+<hr />
+
+<p id="trees">
+<div style="text-align: center">
+	<h3 style="display: inline-block; font-size: .9em">A folder tree is an organizational concept.</h3>
+	<img src="media/lib/1269294461-300px.png" width="300" alt="" style="vertical-align: middle">
+</div>
+
+There are many internet protocols and services that present folders or folder-like qualities. This project provides interfaces for programmers to create software using the folders abstraction atop more complicated interfaces.
+</p>
+
+<hr />
+
+<h3 id="projects">FoldersJS Projects</h3>
+<p>Currently in alpha state, these projects explore compatibility with common services. This projects are included in the 
+<a href="https://github.com/foldersjs/folders-cli">Folders CLI</a> development toolkit.
+</p>
+
+<ul>
+	<li>
+	<abbr title="File Transfer Protocol">FTP</abbr>: once ubiqituous on the Internet for uploading and downloading files, the FTP protocol is still widely used in academia and business.
+	(<a href="https://github.com/foldersjs/folders-ftp">folders-ftp</a>)
+	</li>
+	<li>
+	<abbr title="Secure Socket Shell">SSH</abbr>: providing encryption, the SSH ecosystem includes the spiritual successor to FTP, dubbed <abbr title="Secure File Transfer Protocol">SFTP</abbr> and a host of other networking features for the transfer of data and execution of commands in a reliable and trusted manner.
+	(<a href="https://github.com/foldersjs/folders-ssh">folders-ssh</a>)
+	</li>
+	<li>
+	<abbr title="Hypertext Transfer Protocol">HTTP</abbr>: the most common protocol for end-users, HTTP is a robust mechanism for transfering data and is most often used to serve websites. Data transferred over HTTP is often interpreted by a web browser or software service. The Folders HTTP project provides various client-server protocols currently in experimental state.
+	(<a href="https://github.com/foldersjs/folders-http">folders-http</a>)
+	</li>
+</ul>
+
+<ul>
+	<li>
+	<abbr title="Simple Storage Service">S3</abbr>: created by Amazon Web Services (AWS), this protocol is now widely supported by cloud providers for the storage and retrieval of objects over the HTTP protocol.
+	(<a href="https://github.com/foldersjs/folders-s3">folders-s3</a>)
+	</li>
+	<li>
+	<abbr title="Web Hadoop File System">WebHDFS</abbr>: from the Hadoop project, this protocol is served over HTTP and provides Hadoop ecosystem software efficient access to files and folders for big data processing. Hadoop projects may support the S3 protocol as well.
+	(<a href="https://github.com/foldersjs/folders-hdfs">folders-hdfs</a>)
+	</li>
+</ul>
+
+<ul>
+	<li>
+	<abbr title="Lightweight Directory Access Protocol">LDAP</abbr>: used by many corporations as part of their infrastructure, LDAP services maintain information about users and service accounts and the access to resources that they may be granted.
+	(<a href="https://github.com/foldersjs/folders-ldap">folders-ldap</a>)
+	</li>
+</ul>
+
+<ul>
+	<li>
+	Hive: created by Facebook, Hive is now commonly used in the big data ecosystem as a means for analyzing and transforming structured data sets.
+	(<a href="https://github.com/foldersjs/folders-hive">folders-hive</a>)
+	</li>
+	<li>
+	Presto: created by Facebook, Presto provides connections to multiple data systems (including Hive) for in-memory analysis and transformation of data sets
+	(<a href="https://github.com/foldersjs/folders-presto">folders-presto</a>)
+	</li>
+</ul>
+
+
+</p>
+
+
+</section>
+
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      <p>
+      <a href="#top">Top</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="#folders">Folders</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="#trees">Trees</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="#projects">Projects</a>
+      <span style="float: right">Developed by: folders.io</span>
+      </p>
       </footer>
     </div>
 
