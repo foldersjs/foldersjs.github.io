@@ -29,13 +29,26 @@
         </header>
     </div>
 
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+      <p>
+      <a href="#folders">Introduction</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="#projects">Projects</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="#sdk">SDK</a>
+      <span style="float: right">by folders.io</span>
+      </p>
+      </footer>
+    </div>
+
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
 <a id="folders" class="anchor" href="#folders" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FoldersJS Introduction</h3>
 
-<p>FoldersJS is a collection of node.js projects presenting abstract services as folders.</p>
+<p>FoldersJS is a collection of open source projects presenting services as folders.</p>
 
 <hr />
 
@@ -45,10 +58,11 @@
 	<h3 style="display: inline-block; font-size: .9em">Folders are a metaphor for data access.</h3>
 </div>
 
-When presented as a user interface artifact or a programming abstraction, a folder is a container.
-Folders will have a name, a list of other items and a common set of properties.
+When presented in a user interface or in software development, a folders are containers.
+Folders have a name, a list of other items and a common set of properties.
+<!--
 Conventions for folder names and properties differ across systems.
-
+-->
 When a folder is opened, the list of items or properties it has been assigned become accessible.
 </p>
 
@@ -60,7 +74,7 @@ When a folder is opened, the list of items or properties it has been assigned be
 	<img src="media/lib/1269294461-300px.png" width="300" alt="" style="vertical-align: middle">
 </div>
 
-There are many internet protocols and services that present folders or folder-like qualities. This project provides interfaces for programmers to create software using the folders abstraction atop more complicated interfaces.
+There are many internet protocols and services that present folders or folder-like qualities. This project provides interfaces for software development using the folders abstraction atop more complicated interfaces.
 </p>
 
 <hr />
@@ -117,6 +131,84 @@ There are many internet protocols and services that present folders or folder-li
 
 </p>
 
+<hr />
+
+<h3 id="sdk">FoldersJS SDK</h3>
+<p>FoldersJS provides a software toolkit for client, server and peering relationships using a common set of features.</p>
+
+<h2 id="basics">Basics</h2>
+<p>
+Folders are containers with a name and set of properties that can be opened to list further sub-folders and files.
+
+The standards in web browsers are still evolving, relating to Files and File Systems.
+
+In the alpha version of this software, all files present a file type and content type.
+With the HTML5 standard, a file could be considered a Blob.
+</p>
+
+<h2 id="client">Client</h2>
+<h3 id="client-cmd">Client commands</h3>
+<ul>
+	<li>
+	<dfn id="ls"><abbr title="list">ls</abbr></dfn>
+	This command will list the contents of a folder.
+	</li>
+	<li>
+	<dfn id="cat"><abbr title="catenate">cat</abbr></dfn>
+	This command will read a file entry until it has been read completely or is canceled.
+	</li>
+	<li>
+	<dfn id="write">write</dfn>
+	This command will attempt to write data to a file entry.
+	</li>
+</ul>
+<h3 id="client-attr">Client attributes</h3>
+<ul>
+	<li>
+	<dfn id="attr-server">server</dfn>
+	This attribute is set when an embedded server is available for use.
+	</li>
+	<li>
+	<dfn id="attr-features">features</dfn>
+	This attribute is used to hint what features a server supports.
+	</li>
+</ul>
+<h3 id="client-util">Client utilities</h2>
+<ul>
+	<li>
+	<dfn id="util-stub">stub</dfn>
+	This utility acts as a server with test data for use during development and automated testing.
+	</li>
+	<li>
+	<dfn id="util-union">union</dfn>
+	This utility presents several servers as sub-folders.
+	</li>
+	<li>
+	<dfn id="util-sync">sync</dfn>
+	This utility lists two sub-folders and presents methods to copy missing files from one folder to the other.
+	</li>
+</ul>
+
+<h2 id="server">Server</h2>
+
+<h3>Best Practices</h3>
+Folders packages should follow these practices:
+<ul>
+	<li>Support back-pressure for reasonable memory usage</li>
+	<li>Compatibility with common clients of the protocol</li>
+	<li>Present human-readable results as Markdown</li>
+	<li>Present machine readable objects as JSON</li>
+	<li>Launchable and controllable from the folders-cli project</li>
+</ul>
+
+<h3>Peering Protocols</h3>
+Folders modules will often include full client and server sets for accessibility across existing software.
+
+<p>A proof of concept for peering is included in the main project</p>
+<p><dfn>HTTP Server-Sent Events</dfn> are a means of quickly sending and processing small amounts of data in web browsers.</p>
+<p><dfn>tweetnacl</dfn> is a well-known library used to box and unbox messages when transmitting over insecure channels.</p>
+<p>folders-http provides a proof of concept for web browsers to interface with the full toolkit</p>
+
 
 </section>
 
@@ -128,12 +220,12 @@ There are many internet protocols and services that present folders or folder-li
       <p>
       <a href="#top">Top</a>
       <span aria-hidden="true">&middot;</span>
-      <a href="#folders">Folders</a>
-      <span aria-hidden="true">&middot;</span>
-      <a href="#trees">Trees</a>
+      <a href="#folders">Introduction</a>
       <span aria-hidden="true">&middot;</span>
       <a href="#projects">Projects</a>
-      <span style="float: right">Developed by: folders.io</span>
+      <span aria-hidden="true">&middot;</span>
+      <a href="#sdk">SDK</a>
+      <span style="float: right">(c) folders.io</span>
       </p>
       </footer>
     </div>
